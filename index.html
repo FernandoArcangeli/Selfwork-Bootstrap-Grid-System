@@ -1,118 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        
-       
-        
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        
-<nav>
-    <ul>
-        <li><a href="#selezione">Selezione Film</a></li>
-        <li><a href="#lavora-con-noi">Lavora con noi</a></li>
-    </ul>
-</nav>
-
-<header>
-    <h1 class="hero">MULTISALE ARISTON</h1>
-</header>
-
-<h3 class="sottotitolo">LA NOSTRA SELEZIONE</h3>
-
-<section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     
-    <article>
-        <a href="https://www.multisale-ariston.it/film/46519" target="_blank" rel="together"><img src="./immagini/together.jpg" alt="copertina together">
-            <h3 class="title">TOGETHER</h3>
-            <p>Genere: Horror</p>
-            <p>Lingua: Italiano</p>
-            <p>Regia: Michael Shanks</p>
-        </a>
-    </article>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     
-    <article>
-        <a href="https://www.multisale-ariston.it/film/46313" target="_blank" rel="tron"><img src="./immagini/tron.jpg" alt="tron">
-            <h3 class="title">TRON</h3>
-            <p>Genere: Azione</p>
-            <p>Lingua: Italiano</p>
-            <p>Regia: Joachim Rønning</p>
-        </a>
-    </article>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     
-    <article>
-        <a href="https://www.multisale-ariston.it/film/46763" target="_blank" rel="tre ciotole"><img src="./immagini/tre_ciotole.jpg" alt="tre_ciotole">
-            <h3 class="title">TRE CIOTOLE</h3>
-            <p>Genere: Dramma</p>
-            <p>Lingua: Italiano</p>
-            <p>Regia: Isabel Coixet</p>
-        </a>
-    </article>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     
-</section>
-
-<section class="lavora-con-noi">
-
-    <form class="form" action="#" method="post" novalidate>
-        <h2>LAVORA CON NOI</h2>
-
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="tuo@esempio.it" required>
-
-        <label for="password">Password</label>
-        <input id="password" name="password" type="password" placeholder="Inserisci la password" required minlength="8">
-
-
-        <button type="submit" onclick="showModal(event)">Invia candidatura</button>
-        <div id="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); justify-content:center; align-items:center;">
-            <div class="box">
-                <p class="grazie">Grazie per averci contattato</p>
-            <button type= "button" onclick="closeModal()">Chiudi</button>
+    <nav class="navbar navbar-expand-lg position-fixed top-0 w-100">
+        <div class="container-fluid d-flex">
+            <a class="navbar-brand text-white" href="#">MULTISALE ARISTON</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 justify-content-evenly w-50 ">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Chi Siamo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Contatti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Blog</a>
+                    </li>
+                </ul>  
             </div>
         </div>
-        <script>
-            function showModal(e) {
-            e.preventDefault();
-            document.getElementById('modal').style.display = 'flex';
-            }
-            function closeModal() {
-            document.getElementById('modal').style.display = 'none';
-            }
-        </script>
-    </form>
-
-</section>
-
-
-<footer class="container-fluid bg-dark text-light">
-    <div>
-        <div class="info">
-            <p>P.IVA: 12345678901</p>
-            <p>Proprietario: Cinema Multisale Ariston</p>
-            <p>&copy; 2024 Blog Cinema Multisale Ariston</p>
+    </nav>
+    
+    <header class="container-fluid">
+        <div class="row">
+            <div class="hero col-12">
+                <h1 class="text-white ">MULTISALE ARISTON</h1>
+            </div>
         </div>
-        <div class="social">
-            <a href="https://facebook.com" target="_blank" class="text-light mt-3">
-                <i class="bi bi-facebook" aria-label="Facebook"></i>
-            </a>
-            <a href="https://instagram.com" target="_blank" class="text-light mt-3">
-                <i class="bi bi-instagram" aria-label="Instagram"></i>
-            </a>
-            <a href="https://twitter.com" target="_blank" class="text-light mt-3">
-                <i class="bi bi-twitter-x" aria-label="Twitter"></i>
-            </a>
+    </header>
+    
+    <div class="container-fluid row">
+        <div class="hero col-12">
+            <h4 class="sottotitolo">LA NOSTRA SELEZIONE</h4>
         </div>
     </div>
-</footer>
-
-
-
-
-</body>
-</html>
+    
+    <section class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 d-flex flex wrap justify-content-center mb-4">
+                <div class="carta d-flex justify-content-center" style="width: 16rem;">
+                    <a href="https://www.multisale-ariston.it/film/46519" target="_blank">
+                        <img src="./immagini/together.jpg" class="card-img-top" alt="copertina together">
+                        <h3 class="title mt-3 text-white">TOGETHER</h3>
+                        <div class="card-body container-fluid text-white">
+                            <p>Genere: Horror</p>
+                            <p>Lingua: Italiano</p>
+                            <p>Regia: Michael Shanks</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 d-flex flex wrap justify-content-center mb-4">
+                <div class="carta d-flex justify-content-center" style="width: 16rem;">
+                    <a href="https://www.multisale-ariston.it/film/46763" target="_blank">
+                        <img src="./immagini/tre_ciotole.jpg" class="card-img-top" alt="TRE CIOTOLE">
+                        <h3 class="title mt-3 text-white">TRE CIOTOLE</h3>
+                        <div class="card-body container-fluid text-white">
+                            <p>Genere: Dramma</p>
+                            <p>Lingua: Italiano</p>
+                            <p>Regia: Isabel Coixet</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 d-flex flex wrap justify-content-center mb-4">
+                <div class="carta d-flex justify-content-center" style="width: 16rem;">
+                    <a href="https://www.multisale-ariston.it/film/46313" target="_blank">
+                        <img src="./immagini/tron.jpg" class="card-img-top" alt="tron">
+                        <h3 class="title mt-3 text-white">TRON</h3>
+                        <div class="card-body container-fluid text-white">
+                            <p>Genere: Azione</p>
+                            <p>Lingua: Italiano</p>
+                            <p>Regia: Joachim Rønning</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+                
+                <section class="lavora-con-noi">
+                    
+                    <form class="form" action="#" method="post" novalidate>
+                        <h2>LAVORA CON NOI</h2>
+                        
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="tuo@esempio.it" required>
+                        
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password" placeholder="Inserisci la password" required minlength="8">
+                        
+                        
+                        <button type="submit" onclick="showModal(event)">Invia candidatura</button>
+                        <div id="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); justify-content:center; align-items:center;">
+                            <div class="box">
+                                <p class="grazie">Grazie per averci contattato</p>
+                                <button type= "button" onclick="closeModal()">Chiudi</button>
+                            </div>
+                        </div>
+                        <script>
+                            function showModal(e) {
+                                e.preventDefault();
+                                document.getElementById('modal').style.display = 'flex';
+                            }
+                            function closeModal() {
+                                document.getElementById('modal').style.display = 'none';
+                            }
+                        </script>
+                    </form>
+                    
+                </section>
+                
+                
+                <footer>
+                    <div>
+                        <div class="info">
+                            <p>P.IVA: 12345678901</p>
+                            <p>Proprietario: Cinema Multisale Ariston</p>
+                            <p>&copy; 2024 Blog Cinema Multisale Ariston</p>
+                        </div>
+                        <div class="social">
+                            <a href="https://facebook.com" target="_blank" class="text-light mt-3">
+                                <i class="bi bi-facebook" aria-label="Facebook"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" class="text-light mt-3">
+                                <i class="bi bi-instagram" aria-label="Instagram"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" class="text-light mt-3">
+                                <i class="bi bi-twitter-x" aria-label="Twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+                
+                
+                
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+                
+            </body>
+            </html>
